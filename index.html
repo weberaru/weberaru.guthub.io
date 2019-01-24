@@ -1,193 +1,974 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
 	<meta charset="utf-8">
-	<title>Криптомания иии</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<link rel="stylesheet" media="screen" href="style.css">
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+	<title>Решения в области блокчейн</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Dave Shea">
-	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
-	<meta name="robots" content="all">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
-	<script src="script/html5shiv.js"></script>
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52041444, "init", {
+        id:52041444,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52041444" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
-<!--
-
-
-
-	View source is a feature, not a bug. Thanks for your curiosity and
-	interest in participating!
-
-	Here are the submission guidelines for the new and improved csszengarden.com:
-
-	- CSS3? Of course! Prefix for ALL browsers where necessary.
-	- go responsive; test your layout at multiple screen sizes.
-	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
-	- Graceful degradation is acceptable, and in fact highly encouraged.
-	- use classes for styling. Don't use ids.
-	- web fonts are cool, just make sure you have a license to share the files. Hosted 
-	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
-	  most that require custom HTML won't. TypeKit is supported, see the readme on this
-	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
-
-	And a few tips on building your CSS file:
-
-	- use :first-child, :last-child and :nth-child to get at non-classed elements
-	- use ::before and ::after to create pseudo-elements for extra styling
-	- use multiple background images to apply as many as you need to any element
-	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
-	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
-
-		
--->
-
-<body id="css-zen-garden">
-<div class="page-wrapper">
-
-	<section class="intro" id="zen-intro">
-		<header role="banner">
-			<h1>Криптомания</h1>
-			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
-		</header>
-
-		<div class="summary" id="zen-summary" role="article">
-			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
-			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+			<div class="overlay"></div>
 		</div>
+		<!-- /Background Image -->
 
-		<div class="preamble" id="zen-preamble" role="article">
-			<h3>The Road to Enlightenment</h3>
-			<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
-			<p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.</p>
-			<p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Логотип -->
+					<!--<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/logo.png" alt="logo">
+							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
+						</a>
+					</div>-->
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Основная навигация  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Главная</a></li>
+					<!--<li><a href="#about">About О компаниям</a></li>-->
+					<li><a href="#portfolio">Применение</a></li>
+					<!--<li><a href="#service">Решения</a></li>-->
+					<!--<li><a href="#pricing">Цены</a></li>-->
+					<!--<li><a href="#team">Команда</a></li>-->
+					<!--<li class="has-dropdown"><a href="#blog">Blog Новости</a>
+						<ul class="dropdown">
+							<li><a href="blog-single.html">blog post</a></li>
+						</ul>
+					</li>-->
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+				<!-- /Main navigation -->
+                
+			</div>
+			
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">Решения в области блокчейн</h1>
+							<p class="white-text">Решением, призванным обеспечить сохранность информации и полноценное отслеживание любых её изменений на каждом шаге, стал блокчейн.
+							</p>
+							<!--<button class="white-btn">Get Started!</button>
+							<button class="main-btn">Learn more</button>-->
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
 		</div>
-	</section>
+		<!-- /home wrapper -->
 
-	<div class="main supporting" id="zen-supporting" role="main">
-		<div class="explanation" id="zen-explanation" role="article">
-			<h3>So What is This About?</h3>
-			<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.</p>
-			<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.</p>
+	</header>
+	<!-- /Header -->
+
+	<!-- About -->
+	<div id="about" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header/Заголовок раздела-->
+				<div class="section-header text-center">
+					<h2 class="title">Децентрализованный рынок</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>Информация. По-новому</h3>
+						<p>Блокчейн создает новый подход к регулированию деловых отношений, контролю выполнения договорных обязательств, хранению данных и работе с ними, основанный на максимальной прозрачности, взаимном доверии участников и защите критичной информации.</p>
+						<!--<a href="#">Read more</a>-->
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-microchip" aria-hidden="true"></i>
+						<h3>Прозрачный источник данных</h3>
+						<p>Распределенное хранение данных обеспечивает для всех участников бизнес-процессов единый источник информации. Это дает возможность компаниям, регуляторам и государственным органам обмениваться информацией напрямую. Все движения средств, товаров и ресурсов прозрачны и отслеживаются в реальном времени.</p>
+						<!--<a href="#">Read more</a>-->
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-link" aria-hidden="true"></i>
+						<h3>Защита от компрометации</h3>
+						<p>Информация в такой сети не только прозрачна, но и защищена от несанкционированного вмешательства, изменения и DDoS-атак. И минимум бюрократии — формирование необходимых документов и отчетов можно автоматизировать и открыть для мгновенного доступа.</p>
+						<!--<a href="#">Read more</a>-->
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+			<!-- /Row -->
+
 		</div>
-
-		<div class="participation" id="zen-participation" role="article">
-			<h3>Participation</h3>
-			<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="http://www.mezzoblue.com/zengarden/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-			<p>You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you’ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
-			<p>Download the sample <a href="/examples/index" title="This page's source HTML code, not to be modified.">HTML</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don’t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.</p>
-		</div>
-
-		<div class="benefits" id="zen-benefits" role="article">
-			<h3>Benefits</h3>
-			<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
-		</div>
-
-		<div class="requirements" id="zen-requirements" role="article">
-			<h3>Requirements</h3>
-			<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.</p>
-			<p>Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days — especially when you factor in mobile — pixel-perfect layouts may not be possible across every platform. That’s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).</p>
-			<p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We’re well past the point of needing another garden-related design.</p>
-			<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden's license information.">one on this site</a> so that others may learn from your work.</p>
-			<p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
-		</div>
-
-		<footer>
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site’s HTML" class="zen-validate-html">HTML</a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site’s CSS" class="zen-validate-css">CSS</a>
-			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
-			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
-			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
-		</footer>
+		<!-- /Container -->
 
 	</div>
+	<!-- /About -->
 
 
-	<aside class="sidebar" role="complementary">
-		<div class="wrapper">
+	<!-- Portfolio/Портфель -->
+	<div id="portfolio" class="section md-padding bg-grey">
 
-			<div class="design-selection" id="design-selection">
-				<h3 class="select">Select a Design:</h3>
-				<nav role="navigation">
-					<ul>
-					<li>
-						<a href="/221/" class="design-name">Mid Century Modern</a> by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-					</li>					<li>
-						<a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
-					</li>					<li>
-						<a href="/219/" class="design-name">Steel</a> by						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
-					</li>					<li>
-						<a href="/218/" class="design-name">Apothecary</a> by						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
-					</li>					<li>
-						<a href="/217/" class="design-name">Screen Filler</a> by						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-					</li>					<li>
-						<a href="/216/" class="design-name">Fountain Kiss</a> by						<a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
-					</li>					<li>
-						<a href="/215/" class="design-name">A Robot Named Jimmy</a> by						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-					</li>					<li>
-						<a href="/214/" class="design-name">Verde Moderna</a> by						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-					</li>					</ul>
-				</nav>
+		<!-- Container/Контейнер -->
+		<div class="container">
+
+			<!-- Row/ряд -->
+			<div class="row">
+
+				<!-- Section header/Заголовок раздела -->
+				<div class="section-header text-center">
+					<h2 class="title">Применение блокчейн</h2>
+				</div>
+				<!-- /Section header/Заголовок раздела -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work1.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Финансы</span>
+						<h3>«Цифровой контракт» — система для регистрации и безопасного хранения событий инвестиционного процесса крупного банка: подписание документов, подтверждение платежей, приемка услуг. Благодаря блокчейну участники процесса могут самостоятельно добавлять новые объекты и быть уверенными в неизменности уже подписанных и зарегистрированных событий.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work1.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work2.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Страхование</span>
+						<h3>Распределенный реестр договоров страхования и зарегистрированных страховых случаев, «умные» контракты, гарантирующие соблюдение условий договора— все это стало доступно через специальных ботов, веб-портал и приложения благодаря нашему решению, созданному на базе open source продукта Ethereum.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work2.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work3.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Банки</span>
+						<h3>Мы помогаем участникам процесса кредитования перейти с бумажных операций на автоматически исполняемые смарт-контракты, а также ускорить процедуры выпуска и реализации требований бенефициара по оплате. Благодаря решению «Цифровая банковская гарантия» можно отслеживать статусы гарантий, без уточнения в банке.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work3.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work4.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Управление фондовыми средствами</span>
+						<h3>Решение создано для эффективного управления фондовыми средствами и администрирования счета без привлечения единого оператора. Единый источник данных для граждан и фондов содержит всю историю операций, дает возможность проверить состояние счета в любой момент и сокращает затраты на администрирование капитала управляющими фондами.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work4.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work5.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Государственное управление</span>
+						<h3>Распределённый реестр данных о гражданах обеспечивает единый источник достоверной информации. Созданная база данных используется в повседневной работе множеством государственных и независимых организаций, позволяет получать и обновлять данные, в том числе, о тех, кто въезжает или выезжает из страны. Применение блокчейна защищает информацию от утечки и неправомерного изменения, сокращая коррупционные риски.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work5.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
+				<!-- Work/Работа -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work6.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>«Прозрачная» благотворительность и общественно полезная деятельность</span>
+						<h3>Технология Блокчейн может оказаться полезной в повышении прозрачности благотворительной деятельности, позволяя спонсорам и дарителям отслеживать реальную пользу, которую приносят их средства.</h3>
+						<div class="work-link">
+							<!--<a href="#"><i class="fa fa-external-link"></i></a>-->
+							<!--<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>-->
+						</div>
+					</div>
+				</div>
+				<!-- /Work/Работа -->
+
 			</div>
+			<!-- /Row/Ряд -->
 
-			<div class="design-archives" id="design-archives">
-				<h3 class="archives">Archives:</h3>
-				<nav role="navigation">
-					<ul>
-						<li class="next">
-							<a href="/215/page1">
-								Next Designs <span class="indicator">›</span>
-							</a>
-						</li>
-						<li class="viewall">
-							<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">
-								View All Designs							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="zen-resources" id="zen-resources">
-				<h3 class="resources">Resources:</h3>
-				<ul>
-					<li class="view-css">
-						<a href="/215/215.css" title="View the source CSS file of the currently-viewed design.">
-							View This Design’s <abbr title="Cascading Style Sheets">CSS</abbr>						</a>
-					</li>
-					<li class="css-resources">
-						<a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
-							<abbr title="Cascading Style Sheets">CSS</abbr> Resources						</a>
-					</li>
-					<li class="zen-faq">
-						<a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
-							<abbr title="Frequently Asked Questions">FAQ</abbr>						</a>
-					</li>
-					<li class="zen-submit">
-						<a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
-							Submit a Design						</a>
-					</li>
-					<li class="zen-translations">
-						<a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">
-							Translations						</a>
-					</li>
-				</ul>
-			</div>
 		</div>
-	</aside>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Portfolio/Портфель -->
+
+	<!-- Service/Услуга -->
+	<!--<div id="service" class="section md-padding">-->
+
+		<!-- Container/Контейнер -->
+		<!--<div class="container">-->
+
+			<!-- Row/Ряд -->
+			<!--<div class="row">-->
+
+				<!-- Section header/Заголовок раздела -->
+				<!--<div class="section-header text-center">
+					<h2 class="title">Решения</h2>
+				</div>-->
+				<!-- /Section header/Заголовок раздела -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Финансы</h3>
+						<p>«Цифровой контракт» — система для регистрации и безопасного хранения событий инвестиционного</p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>Страхование</h3>
+						<p>Распределенный реестр договоров страхования и зарегистрированных страховых случаев, «умные» контракты, гарантирующие</p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-cogs"></i>
+						<h3>Банки</h3>
+						<p>Мы помогаем участникам процесса кредитования перейти с бумажных операций на автоматически исполняемые смарт-контракты,</p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Управление фондовыми средствами</h3>
+						<p>Решение создано для эффективного управления фондовыми средствами и администрирования счета без привлечения единого оператора. </p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-pencil"></i>
+						<h3>Государственное управление</h3>
+						<p>Распределённый реестр данных о гражданах обеспечивает единый источник достоверной информации. Созданная база данных используется </p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+				<!-- service/услуга -->
+				<!--<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-flask"></i>
+						<h3>Азартные и видеоигры</h3>
+						<p>Eще один яркий пример безграничного и богатого воображения предпринимателей.</p>
+					</div>
+				</div>-->
+				<!-- /service/услуга -->
+
+			<!--</div>-->
+			<!-- /Row/Ряд -->
+
+		<!--</div>-->
+		<!-- /Container/Контейнер -->
+
+	<!--</div>-->
+	<!-- /Service/Услуга -->
 
 
-</div>
+	<!-- Why Choose Us/Почему Выберите Нас -->
+	<div id="features" class="section md-padding bg-grey">
 
-<!--
+		<!-- Container/Контейнер -->
+		<div class="container">
 
-	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
-	These days we have full ::before and ::after support, favour using those instead.
-	These only remain for historical design compatibility. They might go away one day.
-		
--->
-<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
-<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+			<!-- Row/Ряд -->
+			<div class="row">
+
+				<!-- why choose us content/почему выберите нас содержание -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Почему Веб Эра</h2>
+					</div>
+					<p></p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Мы развиваем блокчейн-практику с 2016 года и накопили опыт работы со всеми ключевыми продуктами, существующими сегодня на рынке.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Мы предоставляем полный набор услуг — от консалтинга по работе с блокчейном с учётом ваших задач до решения под ключ, включая обучение пользователей и круглосуточную поддержку.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Наши эксперты создали ряд масштабных интеграционных решений для крупных коммерческих и государственных заказчиков.</p>
+					</div>
+					<!--<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+					</div>-->
+				</div>
+				<!-- /why choose us content/почему выберите нас содержание -->
+
+				<!-- About slider/О слайдере -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="./img/about1.jpg" alt="">
+						<img class="img-responsive" src="./img/about2.jpg" alt="">
+						<img class="img-responsive" src="./img/about3.jpg" alt="">
+						<img class="img-responsive" src="./img/about4.jpg" alt="">
+					</div>
+				</div>
+				<!-- /About slider/О слайдере -->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Why Choose Us/Почему Выберите Нас -->
 
 
-</body></html>
+	<!-- Numbers/Числа -->
+	<!--<div id="numbers" class="section sm-padding">-->
+
+		<!-- Background Image/фоновое изображение -->
+		<!--<div class="bg-img" style="background-image: url('./img/background2.jpg');">
+			<div class="overlay"></div>
+		</div>-->
+		<!-- /Background Image/фоновое изображение -->
+
+		<!-- Container/Контейнер  -->
+		<div class="container">
+
+			<!-- Row/Ряд -->
+			<div class="row">
+
+				<!-- number/число -->
+				<!--<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-users"></i>
+						<h3 class="white-text"><span class="counter">451</span></h3>
+						<span class="white-text">Happy clients</span>
+					</div>
+				</div>-->
+				<!-- /number/число -->
+
+				<!-- number/число -->
+				<!--<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-trophy"></i>
+						<h3 class="white-text"><span class="counter">12</span></h3>
+						<span class="white-text">Awards won</span>
+					</div>
+				</div>-->
+				<!-- /number/число -->
+
+				<!-- number/число -->
+				<!--<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-coffee"></i>
+						<h3 class="white-text"><span class="counter">154</span>K</h3>
+						<span class="white-text">Cups of Coffee</span>
+					</div>
+				</div>-->
+				<!-- /number/число -->
+
+				<!-- number/число -->
+				<!--<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-file"></i>
+						<h3 class="white-text"><span class="counter">45</span></h3>
+						<span class="white-text">Projects completed</span>
+					</div>
+				</div>-->
+				<!-- /number/число -->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Numbers/Числа -->
+
+	<!-- Pricing/ценообразование -->
+	<!--<div id="pricing" class="section md-padding">-->
+
+		<!-- Container/Контейнер -->
+		<!--<div class="container">
+
+			<!-- Row/Ряд -->
+			<!--<div class="row">-->
+
+				<!-- Section header/Заголовок раздела -->
+				<!--<div class="section-header text-center">
+					<h2 class="title">Pricing Table</h2>
+				</div>-->
+				<!-- /Section header/Заголовок раздела -->
+
+				<!-- pricing/ценообразование -->
+				<!--<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Basic plan</span>
+							<div class="price">
+								<h3>$9<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>-->
+				<!-- /pricing/ценообразование -->
+
+				<!-- pricing/ценообразование -->
+				<!--<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Silver plan</span>
+							<div class="price">
+								<h3>$19<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>-->
+				<!-- /pricing/ценообразование -->
+
+				<!-- pricing/ценообразование -->
+				<!--<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Gold plan</span>
+							<div class="price">
+								<h3>$39<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>-->
+				<!-- /pricing/Ценообразование -->
+
+			</div>
+			<!-- Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	 </div>
+	<!-- /Pricing/Ценообразование -->
+
+
+	<!-- Testimonial/Рекомендация -->
+	<div id="testimonial" class="section md-padding">
+
+		<!-- Background Image/фоновое изображение -->
+		<div class="bg-img" style="background-image: url('./img/background3.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image/фоновое изображение -->
+
+		<!-- Container/Контейнер -->
+		<div class="container">
+
+			<!-- Row/Ряд -->
+			<div class="row">
+
+				<!-- Testimonial slider/Слайдер отзывов -->
+				<!--<div class="col-md-10 col-md-offset-1">-->
+					<!--<div id="testimonial-slider" class="owl-carousel owl-theme">-->
+
+						<!-- testimonial/рекомендация -->
+						<!--<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/perso1.jpg" alt="">
+								<h3 class="white-text">1John Doe</h3>
+								<span>Web Designer</span>
+							</div>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+						</div>-->
+						<!-- /testimonial/рекомендация -->
+
+						<!-- testimonial/рекомендация -->
+						<!--<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/perso2.jpg" alt="">
+								<h3 class="white-text">2John Doe</h3>
+								<span>Web Designer</span>
+							</div>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+						</div>-->
+						<!-- /testimonial/рекомендация -->
+
+					</div>
+				</div>
+				<!-- /Testimonial slider/Слайдер отзывов -->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Testimonial/рекомендация -->
+
+	<!-- Команда -->
+	<!--<div id="team" class="section md-padding">-->
+
+		<!-- Container/Контейнер -->
+		<!--<div class="container">-->
+
+			<!-- Row/Ряд -->
+			<!--<div class="row">-->
+
+				<!-- Section header/Заголовок раздела -->
+				<!--<div class="section-header text-center">
+					<h2 class="title">Команда</h2>
+				</div>-->
+				<!-- /Section header/Заголовок раздела -->
+
+				<!-- Команда -->
+				<!--<div class="col-sm-4">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/team1.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>1John Doe</h3>
+							<span>Web Designer</span>
+						</div>
+					</div>
+				</div>-->
+				<!-- /team Команда -->
+
+				<!-- Команда team -->
+				<!--<div class="col-sm-4">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/team2.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>John Doe</h3>
+							<span>Web Designer</span>
+						</div>
+					</div>
+				</div>-->
+				<!-- /team Команда-->
+
+				<!-- team Команда-->
+				<!--<div class="col-sm-4">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/team3.jpg" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>John Doe</h3>
+							<span>Web Designer</span>
+						</div>
+					</div>
+				</div>-->
+				<!-- /team Команда-->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Team Команда -->
+
+	<!-- Blog -->
+	<!--<div id="blog" class="section md-padding bg-grey">-->
+
+		<!-- Container/Контейнер -->
+		<!--<div class="container">-->
+
+			<!-- Row/Ряд -->
+			<!--<div class="row">-->
+
+				<!-- Section header/Заголовок раздела -->
+				<!--<div class="section-header text-center">
+					<h2 class="title">Recents news</h2>
+				</div>-->
+				<!-- /Section header/Заголовок раздела -->
+
+				<!-- blog/Блог -->
+				<!--<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="./img/blog1.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>-->
+				<!-- /blog/Блог -->
+
+				<!-- blog/Блог -->
+				<!--<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="./img/blog2.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>-->
+				<!-- /blog/Блог -->
+
+				<!-- blog/Блог -->
+				<!--<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>-->
+				<!-- /blog/Блог -->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Blog/Блог -->
+
+	<!-- Contact/Контейнер -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container/Контейнер -->
+		<div class="container">
+
+			<!-- Row/Ряд -->
+			<div class="row">
+
+				<!-- Section-header/Заголовок раздела -->
+				<div class="section-header text-center">
+					<h2 class="title">Контакты</h2>
+				</div>
+				<!-- /Section-header/Заголовок раздела -->
+
+				<!-- contact/контакт -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Тел.</h3>
+						<p>(831) 291-21-38</p>
+					</div>
+				</div>
+				<!-- /contact/контакт -->
+
+				<!-- contact/контакт -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>1@webera.ml</p>
+					</div>
+				</div>
+				<!-- /contact/контакт -->
+
+				<!-- contact/контакт -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Адрес</h3>
+						<p>Нижний Новгород, ул. Фрунзе, д.21, офис 1</p>
+					</div>
+				</div>
+				<!-- /contact/контакт -->
+
+				<!-- contact form/контактная форма -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Ваше имя">
+						<input type="email" class="input" placeholder="Телефон">
+						<input type="text" class="input" placeholder="Тема">
+						<textarea class="input" placeholder="Сообщение"></textarea>
+						<button class="main-btn">Отправить сообщение</button>
+					</form>
+				</div>
+				<!-- /contact form/контактная форма -->
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</div>
+	<!-- /Contact/Контакт -->
+
+
+	<!-- Footer/Футбол -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container/Контейнер -->
+		<div class="container">
+
+			<!-- Row/Ряд -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo/нижний колонтитул логотип -->
+					<!--<div class="footer-logo">
+						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+					</div>-->
+					<!-- /footer logo/нижний колонтитул логотип -->
+
+					<!-- footer follow/нижний колонтитул следовать -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow/нижний колонтитул следовать -->
+
+					<!-- footer copyright/копирайт текста  -->
+					<div class="footer-copyright">
+						<p>© 2019 Веб Эра</p>
+					</div>
+					<!-- /footer copyright/копирайт текста  -->
+
+				</div>
+
+			</div>
+			<!-- /Row/Ряд -->
+
+		</div>
+		<!-- /Container/Контейнер -->
+
+	</footer>
+	<!-- /Footer/Футбол -->
+
+	<!-- Back to top/Назад к началу -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top/Назад к началу -->
+
+	<!-- Preloader/Прелоадер -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader/Прелоадер -->
+
+	<!-- jQuery Plugins/jQuery Плагины -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
