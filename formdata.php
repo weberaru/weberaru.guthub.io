@@ -1,5 +1,5 @@
 <?php
-$resuit = mail("ИМЯ: $_POST[text] Сообщение: $_POST[email] Тема: $_POST[text] Сам текст: $_POST[input]");
+$resuit = mail("5@3243.ru","Анкета с сайта","С сайта была пол инфа: ИМЯ: $_POST[text] Сообщение: $_POST[email] Тема: $_POST[text] Сам текст: $_POST[input]");
 
 if ($result) {
     echo "<p>Сообщение отправлино успешно!</p>";
