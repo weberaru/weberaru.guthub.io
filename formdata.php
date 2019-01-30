@@ -1,5 +1,5 @@
 <?php
-$resuit = mail("ИМЯ: $_POST[ez0] Сообщение: $_POST[ez1] Тема: $_POST[ez2] Сам текст: $_POST[ez3]");
+$resuit = mail("ИМЯ: $_POST[text] Сообщение: $_POST[email] Тема: $_POST[text] Сам текст: $_POST[input]");
 
 if ($result) {
     echo "<p>Сообщение отправлино успешно!</p>";
